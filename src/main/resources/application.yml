@@ -3,8 +3,15 @@ spring:
     name: teste-pratico
   flyway:
     enabled: true
+    
   datasource:
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3307/${MYSQL_DB:SpringBootUploadFilesDatabase}?useTimezone=true&serverTimezone=UTC
     username: ${MYSQL_USERNAME:root}
     password: ${MYSQL_PASSWORD:root}
+    
   jpa:    hibernate:      ddl-auto: update
+      
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 2MB
