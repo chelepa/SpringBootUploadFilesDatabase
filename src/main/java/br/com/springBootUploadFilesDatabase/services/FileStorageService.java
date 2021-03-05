@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
@@ -47,5 +48,12 @@ public class FileStorageService {
 			return new ResponseFileDTO(dbFile.getId(), dbFile.getName(), fileDownloadUri, dbFile.getType(), dbFile.getData().length);
 			
 		}).collect(Collectors.toList());
+	}
+
+	public ResponseEntity<Void> deleteById(String id) {
+		
+		filesEntityRepository.deleteById(id);
+		
+		return ResponseEntity.noContent().build();
 	}
 }
