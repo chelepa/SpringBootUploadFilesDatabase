@@ -1,4 +1,4 @@
-package br.com.deliver.testepratico;
+package br.com.springBootUploadFilesDatabase;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
@@ -9,10 +9,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
-public class DeliverTestePraticoApplication {
+public class SpringBootUploadFilesDatabaseApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DeliverTestePraticoApplication.class, args);
+		SpringApplication.run(SpringBootUploadFilesDatabaseApplication.class, args);
 	}
 	
     @Bean

@@ -8,10 +8,10 @@
 		<version>2.3.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.deliver</groupId>
-	<artifactId>teste-pratico</artifactId>
+	<groupId>br.com</groupId>
+	<artifactId>springBootUploadFilesDatabase</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>deliver-teste-pratico</name>
+	<name>SpringBootUploadFilesDatabase</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
